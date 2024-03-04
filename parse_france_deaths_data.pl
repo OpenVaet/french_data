@@ -26,7 +26,7 @@ my %days_by_days  = ();
 
 parse_files();
 
-open my $out, '>:utf8', 'data/insee_deathes_data.json' or die $!;
+open my $out, '>:utf8', 'data/insee_deaths_data.json' or die $!;
 print $out encode_json\%raw_data;
 close $out;
 

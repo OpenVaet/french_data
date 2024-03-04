@@ -37,7 +37,7 @@ p%deaths_by_departments;
 say "$not_dead_in_france / $deaths";
 
 sub load_deaths_data {
-	my $file = 'data/insee_deathes_data.json';
+	my $file = 'data/insee_deaths_data.json';
 	my $json;
 	open my $in, '<:', $file;
 	while (<$in>) {
